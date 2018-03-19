@@ -1,0 +1,34 @@
+<section id="signupSection" style="display: none">
+  <div class="container page">
+      <h1>Sign Up</h1>
+
+      <form role="form" id="signupForm">
+        <div class="form-group">
+          <label for="signUpUsername">Username:</label>
+          <input type="text" class="form-control" id="signUpUsername" required>
+        </div>
+        <div class="form-group">
+          <label for="signUpName">Name:</label>
+          <input type="text" class="form-control" id="signUpName" required>
+        </div>
+        <div class="form-group">
+          <label for="signUpEmail">Email Address:</label>
+          <input type="email" class="form-control" id="signUpEmail" required>
+        </div>
+        <div class="form-group">
+          <label for="signUpPassword">Password:</label>
+          <input type="password" class="form-control" id="signUpPassword" 
+                placeholder="Enter password" required>
+        </div>
+        <div class="form-group">
+          <label for="signUpConfirmPassword">Confirm Password:</label>
+          <input type="password" data-match= "#signUpPassword" 
+                data-match-error="Passwords must match" class="form-control" 
+                id="signUpConfirmPassword" placeholder="Enter password" required>
+        </div>
+        <button type="button" id="signUpButton" class="btn btn-default">Sign Up</button>
+      </form>
+      
+  </div>
+</section>
+  

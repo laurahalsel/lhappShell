@@ -1,0 +1,61 @@
+<section id="manageAccount" style="display:none">
+    <div class="container page">
+        <form>
+            <input type="hidden" class="form-control" id="manageID" value="">
+            <div class="form-group">
+            <label>Username</label>
+            <input type="text" class="form-control" id="manageUsername" placeholder="change Username">
+            </div>
+            <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" id="manageName" placeholder="Change Name">
+            </div>
+            <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" id="manageEmail" placeholder="Change Email">
+            </div>
+            <button type="submit" id="updateButton" class="btn btn-default">Update</button>
+
+            <!-- Button trigger modal -->
+            <button type="button" id="changePasswordModal" class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter">
+                Change Password
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                            <h1>Change Password</h1>
+                            <form role="form">
+                              <input type="hidden" class="form-control" id="changePasswordID">
+                              <div class="form-group">
+                                <label for="changeUsername">Username:</label>
+                                <input type="text" class="form-control" id="usernameInput" disabled>
+                              </div>
+                              <div class="form-group">
+                                    <label for="changeOldPassword">Old Password:</label>
+                                    <input type="password" class="form-control" id="oldPassword" 
+                                          placeholder="Enter password" required>
+                                  </div>
+                              <div class="form-group">
+                                <label for="changeNewPassword">New Password:</label>
+                                <input type="password" class="form-control" id="newPassword" 
+                                      placeholder="Enter password" required>
+                              </div>
+                              <div class="form-group">
+                                <label for="changeConfirmPassword">Confirm Password:</label>
+                                <input type="password" data-match= "#newPassword" 
+                                      data-match-error="Passwords must match" class="form-control" 
+                                      id="confirmNewPassword" placeholder="Enter password" required>
+                              </div>
+                            </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" id="saveChangesButton">Save changes</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </form>
